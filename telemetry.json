@@ -1,0 +1,32 @@
+{
+    "name": "Example Telemetry",
+    "key": "tm",
+    "measurements": [
+        {
+            "name": "Convergence",
+            "key": "sim.conv",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "RMS",
+                    "format": "float",
+                    "min": -1e-10,
+                    "max": 0.0,
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        }
+    ]
+}

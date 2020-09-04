@@ -1,7 +1,7 @@
 {
-  "name": "openmct-tutorials",
+  "name": "openmct-nscode",
   "version": "0.0.1",
-  "description": "Tutorials for Open MCT",
+  "description": "OpenMCT NSCODE",
   "main": "example-server/server.js",
   "scripts": {
     "start": "node example-server/server.js",

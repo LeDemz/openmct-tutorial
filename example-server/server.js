@@ -2,7 +2,7 @@
  * Basic implementation of a history and realtime server.
  */
 
-var Spacecraft = require('./spacecraft');
+// var Spacecraft = require('./spacecraft');
 var RealtimeServer = require('./realtime-server');
 var HistoryServer = require('./history-server');
 var StaticServer = require('./static-server');
@@ -11,13 +11,13 @@ var expressWs = require('express-ws');
 var app = require('express')();
 expressWs(app);
 
-var spacecraft = new Spacecraft();
-var realtimeServer = new RealtimeServer(spacecraft);
-var historyServer = new HistoryServer(spacecraft);
+// var spacecraft = new Spacecraft();
+// var realtimeServer = new RealtimeServer(spacecraft);
+// var historyServer = new HistoryServer(spacecraft);
 var staticServer = new StaticServer();
 
-app.use('/realtime', realtimeServer);
-app.use('/history', historyServer);
+// app.use('/realtime', realtimeServer);
+// app.use('/history', historyServer);
 app.use('/', staticServer);
 
 var port = process.env.PORT || 8080
